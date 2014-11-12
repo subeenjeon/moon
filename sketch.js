@@ -30,6 +30,14 @@ function draw() {
  	image(solar,250,250,500,500);
 
 
+ 	//지구
+	image(earth,500 + Math.cos(timing1*2*PI)*300-150,500 + Math.sin(timing1*2*PI)*300-150,300,300);
+
+
+	//토이스토리
+	image(human,450 + Math.cos(timing5*2*PI)*485, 450 + Math.sin(timing5*2*PI)*485, 100, 126);  
+
+
  	//달1
 	image(moon,500 + Math.cos(timing1*2*PI)*300 + Math.cos(timing2*4*PI)*150-100,
 		500 + Math.sin(timing1*2*PI)*300 + Math.sin(timing2*4*PI)*70-100,200,200);
@@ -39,9 +47,4 @@ function draw() {
 
 	image(moon,500 + Math.cos(timing1*2*PI)*300 + Math.cos(timing4*4*PI)*50-100,
 		500 + Math.sin(timing1*2*PI)*300 + Math.sin(timing4*4*PI)*150-100,200,200);
-
- 	//지구
-	image(earth,500 + Math.cos(timing1*2*PI)*300-150,500 + Math.sin(timing1*2*PI)*300-150,300,300);
-
-	image(human,450 + Math.cos(timing5*2*PI)*485, 450 + Math.sin(timing5*2*PI)*485, 100, 126);         
 }
